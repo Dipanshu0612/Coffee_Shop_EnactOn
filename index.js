@@ -1,7 +1,7 @@
-console.log('Hello World');
+// console.log('Hello World');
 let sections=document.querySelectorAll('section');
 let navLinks=document.querySelectorAll('.navbar_ul a');
-console.log(navLinks);
+// console.log(navLinks);
 window.onscroll = () =>{
     sections.forEach(sec=>{
         let top=window.scrollY;

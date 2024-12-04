@@ -27,7 +27,12 @@ section {
     padding: 9rem 2rem;
     width: 100%;
 }
-
+section h1,h2{
+    font-family: "Bruno Ace SC", sans-serif;
+}
+a{
+    text-decoration: none;
+}
 span {
     color: var(--main-color);
 }
@@ -46,6 +51,9 @@ ul{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    border-bottom: 2px solid var(--main-color);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .title{
@@ -54,13 +62,23 @@ ul{
     justify-content: center;
     font-size: 0.8rem;
     padding: 2px 15px;
-    color: var(--main-color);
+    color: white!important;
     cursor: pointer;
+    font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .title img{
     width: 40px;
     height: 40px;
     margin-right: 10px;
+}
+.title a{
+    text-decoration: none;
+}
+.title a h1{
+    margin:0;
+    color: white;
 }
 .navbar_ul{
     display: flex;
@@ -76,15 +94,20 @@ ul{
     font-size: 1.2rem;
     font-weight: 500; 
     text-decoration: none;
-    padding: 39px 0;                  
+    padding: 39px 0; 
+    font-family: "Bungee Inline", sans-serif;                 
 }
 .navbar_ul li{
     padding: 0 15px;
+    transition: 0.2s ease-in-out;
+}
+.navbar_ul li:hover{
+    transform: scale(1.1);
 }
 .navbar_ul li a:hover,
 a.active {
     color: var(--main-color);
-    font-weight: 600;
+    font-weight: 700;
 }
 .search{
     display: flex;
@@ -98,6 +121,10 @@ a.active {
     width: 30px;
     height: 40px;
     margin: 5px 10px;
+}
+.search img:hover{
+    transform: scale(1.1);
+
 }
 #home{
     background-color: var(--bg-color);
@@ -118,10 +145,14 @@ a.active {
 .main_content h1{
     font-size: 4rem;
     margin-bottom: 1rem;
+    font-style: italic;
 }
 .main_content p{
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 .main_content button{
     width: 10rem;
@@ -130,12 +161,13 @@ a.active {
     border-radius: 10px;
     font-size: medium;
     font-weight: bold;
+    transition: 0.2s ease-in-out;
 }
-.main_content button a{
+.main_content button a,.about_1 button a{
     text-decoration: none;
     color: black;
 }
-.main_content button:hover{
+.main_content button:hover,.main_contact button:hover{
     background-color: rgb(248, 183, 17);
     box-shadow: 0 0 20px var(--main-color);
 }
@@ -149,7 +181,9 @@ a.active {
 .main_img img{
     width:35rem;
     height:25rem;
-    border-radius: 10%;
+    margin-bottom: 1rem;
+    border:2px solid var(--main-color);
+    border-top-right-radius: 10%;    border-bottom-left-radius: 10%;
 }
 .home_2{
     display: flex;
@@ -163,6 +197,8 @@ a.active {
 .top_prods{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-around;
     align-items: center;
     padding: 0 20px;
@@ -176,6 +212,7 @@ a.active {
     background-color: var(--bg-color)!important;
     color: white!important;
     cursor: pointer;
+    box-shadow: 0 0 10px var(--main-color);
     transition: all 0.2s ease-in-out;
 }
 .card:hover{
@@ -197,6 +234,8 @@ a.active {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--main-color);
+    font-style: italic;
+
 }
 #about{
     background-color: var(--second-bg-color);
@@ -219,11 +258,32 @@ a.active {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--main-color);
+    font-style: italic;
+
 }
 .about_1 p{
     font-size: 1.2rem;
     margin-bottom: 1rem;
     letter-spacing: 0.05em;
+    font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.about_1 button{
+    width: 10rem;
+    padding: 0.8rem;
+    background-color: rgb(202, 165, 84);
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    margin: 2rem 0;
+    align-self: center;
+}
+.about_1 button:hover{
+    background-color: rgb(218, 173, 77);
+    box-shadow: 0 0 10px rgb(218, 173, 77);
+    
 }
 .about_categories{
     display: flex;
@@ -234,22 +294,38 @@ a.active {
 .category{
     width: 30%;
     height: 15rem;
-    border: 2px solid goldenrod;
+    border: 0.1px solid grey;
+    box-shadow: 0 0 5px var(--main-color);
+    background-color: rgb(202, 165, 84);
     border-radius: 10px;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.category img{
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    color: var(--main-color);
+}
+.category h5{
+    color: black;
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Bruno Ace SC';
 }
 .about_2{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem;    
 }
 .about_tagline{
     display: flex;
@@ -259,12 +335,78 @@ a.active {
     margin-top: 2rem;
     color: var(--main-color);
     letter-spacing: 0.15em;
+    font-style: italic;
+    font-family: "Trade Winds", system-ui;
 }
 #menu{
     background-color: var(--bg-color);
 }
+.main_menu{
+    display: flex;
+    flex-direction: column;
+}
+.main_menu h1{
+    align-self: center;
+    color: var(--main-color);
+    font-style: italic;
+}
+.menu_category{
+    padding: 2rem;
+}
+.menu_cat_items{
+    display: flex;
+    gap: 3rem;
+}
+.menu_cat_title{
+    color: var(--main-color);
+    font-style: italic;
+    margin: 1rem 0;
+    font-family: "Libre Bodoni", serif;
+  font-optical-sizing: auto;
+}
+.card-body h5,h6{
+    font-family: "Emilys Candy", serif;
+}
 #contact{
     background-color: var(--second-bg-color);
+}
+.main_contact{
+    display: flex;
+    flex-direction: column;
+}
+.main_contact h1{
+    align-self: center;
+    color: var(--main-color);
+    font-style: italic;
+}
+.main_contact button{
+    padding: 1rem;
+    width: 10%;
+    align-self: center;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+}
+.main_contact form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 25rem;
+    gap: 2rem;
+    margin: 2rem;
+}
+.main_contact form input, textarea{
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: var(--bg-color);
+    font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+#feedback{
+    resize: none;
 }
 .footer{
     display: flex;
@@ -276,6 +418,11 @@ a.active {
     padding: 3rem;
     gap: 1rem;
     font-size: 1.2rem;
+}
+.footer h3,h4,h5{
+    font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .footer-social {
     display: flex;

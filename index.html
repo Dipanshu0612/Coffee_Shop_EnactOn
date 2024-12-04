@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>D's Coffee Shop</title>
+    <title>D's Coffee Shop - Enjoy The Most Delicious Coffee In The World!</title>
     <link rel="shortcut icon" href="/assests/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
     <link
@@ -24,15 +24,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.17.0/tabler-icons.min.css"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Lugrasimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Lugrasimo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Trade+Winds&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
 
   <body>
     <header class="main_header">
       <div class="title">
-        <img src="/assests/coffee.png" alt="Coffee Icon" class="icon" />
-        <h1>D's Coffee Shop</h1>
+        <a href="#home"><img src="/assests/coffee.png" alt="Coffee Icon" class="icon" /></a>
+        <a href="#home"><h1>D's Coffee Shop</h1></a>
       </div>
       <nav class="navbar">
         <ul class="navbar_ul">
@@ -51,7 +59,7 @@
     <section id="home">
       <div class="home_main">
         <div class="main_content">
-          <h1>Enjoy The Most Delicious Coffee In The World!</h1>
+          <h1>Enjoy The Most Delicious <span>Coffee In The World!</span></h1>
           <p>
             Start your day with coffee, enhancing Productivity and Mood. Its
             invigorating aroma and taste will make you feel alive and sets the
@@ -71,7 +79,7 @@
         <div class="top_prods">
           <div class="card">
             <img
-              src="/assests/coffee1.webp"
+              src="/assests/coffee_items/coffee1.webp"
               class="card-img-top"
               alt="Black Coffee"
             />
@@ -84,40 +92,40 @@
             </div>
           </div>
           <div class="card">
-            <img src="/assests/coffee2.jpg" class="card-img-top" alt="Latte" />
+            <img src="/assests/snacks/snack2.jpg" class="card-img-top" alt="Ham" />
             <div class="card-body">
-              <h5 class="card-title">Latte</h5>
+              <h5 class="card-title">Ham Sandwich</h5>
               <div class="card_price">
-                <h6>Rs. 120/-</h6>
-                <h6>4.1 ⭐</h6>
+                <h6>Rs. 90/-</h6>
+                <h6>4.5 ⭐</h6>
               </div>
             </div>
           </div>
           <div class="card">
             <img
-              src="/assests/coffee3.jpg"
+              src="/assests/desserts/des4.webp"
               class="card-img-top"
-              alt="Espresso"
+              alt="Chocolate Waffle"
             />
             <div class="card-body">
-              <h5 class="card-title">Espresso</h5>
+              <h5 class="card-title">Chocolate Waffle</h5>
               <div class="card_price">
-                <h6>Rs. 150/-</h6>
-                <h6>4.0 ⭐</h6>
+                <h6>Rs. 120/-</h6>
+                <h6>4.3 ⭐</h6>
               </div>
             </div>
           </div>
           <div class="card">
             <img
-              src="/assests/coffee4.webp"
+              src="/assests/coffee_items/coffee5.jpg"
               class="card-img-top"
-              alt="Americano Coffee"
+              alt="Macchiato"
             />
             <div class="card-body">
-              <h5 class="card-title">Americano Coffee</h5>
+              <h5 class="card-title">Macchiato</h5>
               <div class="card_price">
-                <h6>Rs. 120/-</h6>
-                <h6>3.8 ⭐</h6>
+                <h6>Rs. 180/-</h6>
+                <h6>4.3 ⭐</h6>
               </div>
             </div>
           </div>
@@ -139,10 +147,20 @@
             cup of coffee today!
           </p>
           <div class="about_categories">
-            <div class="category"></div>
-            <div class="category"></div>
-            <div class="category"></div>
+            <div class="category">
+              <img src="/assests/coffee-cup.gif" alt="">
+              <h5>Coffee</h5>
+            </div>
+            <div class="category">
+              <img src="/assests/beverage.gif" alt="">
+              <h5>Beverage</h5>
+            </div>
+            <div class="category">
+              <img src="/assests/ice-cream.gif" alt="">
+              <h5>Desserts</h5>
+            </div>
           </div>
+          <button><a href="#menu">Browse Menu</a></button>
         </div>
         <div class="about_2">
           <div
@@ -181,9 +199,303 @@
       </div>
     </section>
 
-    <section id="menu">Menu Items</section>
+    <section id="menu">
+      <div class="main_menu">
+        <h1>On The Menu!</h1>
+        <div class="menu_category">
+          <h3 class="menu_cat_title">Coffee</h3>
+          <div class="menu_cat_items">
+            <div class="card">
+              <img
+                src="/assests/coffee_items/coffee1.webp"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Black Coffee</h5>
+                <div class="card_price">
+                  <h6>Rs. 85/-</h6>
+                  <h6>4.5 ⭐</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="/assests/coffee_items/coffee3.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Espresso</h5>
+                <div class="card_price">
+                  <h6>Rs. 99/-</h6>
+                  <h6>3.9 ⭐</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="/assests/coffee_items/coffee4.webp"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Americano Coffee</h5>
+                <div class="card_price">
+                  <h6>Rs. 99/-</h6>
+                  <h6>3.9 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/coffee_items/coffee2.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Latte</h5>
+                <div class="card_price">
+                  <h6>Rs. 85/-</h6>
+                  <h6>4.0 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/coffee_items/coffee5.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Macchiato</h5>
+                <div class="card_price">
+                  <h6>Rs. 180/-</h6>
+                  <h6>4.3 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/coffee_items/coffee6.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Flat White</h5>
+                <div class="card_price">
+                  <h6>Rs. 65/-</h6>
+                  <h6>3.8 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/coffee_items/coffee7.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cappucchino</h5>
+                <div class="card_price">
+                  <h6>Rs. 120/-</h6>
+                  <h6>4.0 ⭐</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu_category">
+          <h3 class="menu_cat_title">Snacks</h3>
+          <div class="menu_cat_items">
+            <div class="card">
+              <img
+                src="/assests/snacks/snack1.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Raisin Toast</h5>
+                <div class="card_price">
+                  <h6>Rs. 50/-</h6>
+                  <h6>3.8 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/snacks/snack2.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ham Sandwich</h5>
+                <div class="card_price">
+                  <h6>Rs. 90/-</h6>
+                  <h6>4.5 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/snacks/snack3.webp"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pastries</h5>
+                <div class="card_price">
+                  <h6>Rs. 85/-</h6>
+                  <h6>4.0 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/snacks/snack4.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Croissant</h5>
+                <div class="card_price">
+                  <h6>Rs. 75/-</h6>
+                  <h6>3.8 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/snacks/snack5.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">French Fries</h5>
+                <div class="card_price">
+                  <h6>Rs. 70/-</h6>
+                  <h6>4.0 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/snacks/snack6.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Veg Burger</h5>
+                <div class="card_price">
+                  <h6>Rs. 65/-</h6>
+                  <h6>3.9 ⭐</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu_category">
+          <h3 class="menu_cat_title">Desserts</h3>
+          <div class="menu_cat_items">
+            <div class="card">
+              <img
+                src="/assests/desserts/des1.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Strawberry Waffle</h5>
+                <div class="card_price">
+                  <h6>Rs. 99/-</h6>
+                  <h6>4.0 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/desserts/des2.webp"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cinnamon Roll</h5>
+                <div class="card_price">
+                  <h6>Rs. 75/-</h6>
+                  <h6>3.7 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/desserts/des3.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lemon Pie</h5>
+                <div class="card_price">
+                  <h6>Rs. 60/-</h6>
+                  <h6>3.9 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/desserts/des4.webp"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chocolate Waffle</h5>
+                <div class="card_price">
+                  <h6>Rs. 120/-</h6>
+                  <h6>4.3 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/desserts/des5.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cheesecake</h5>
+                <div class="card_price">
+                  <h6>Rs. 65/-</h6>
+                  <h6>4.1 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/desserts/des6.jpg"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chocolate Muffin</h5>
+                <div class="card_price">
+                  <h6>Rs. 55/-</h6>
+                  <h6>4.0 ⭐</h6>
+                </div>
+              </div>
+            </div><div class="card">
+              <img
+                src="/assests/desserts/des7.webp"
+                class="card-img-top"
+                alt="Black Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Brownies</h5>
+                <div class="card_price">
+                  <h6>Rs. 70/-</h6>
+                  <h6>4.1 ⭐</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="contact">Contact Us!</section>
+    <section id="contact">
+      <div class="main_contact">
+        <h1>Contact Us!</h1>
+        <form action="">
+          <input type="text" placeholder="Enter Your Name">
+          <input type="email" name="Email" id="" placeholder="Enter Your Email">
+          <textarea name="feedback" id="feedback" rows="14" cols="50" placeholder="Enter Your Message"></textarea>
+        </form>
+        <button type="submit">Submit</button>
+      </div>
+    </section>
 
     <footer class="footer">
       <h3>D's Coffee Shop</h3>
