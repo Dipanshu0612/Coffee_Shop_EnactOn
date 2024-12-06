@@ -115,17 +115,23 @@ a.active {
     align-items: center;
     color: white;
     cursor: pointer;
+    gap: 1rem;
     
 }
 .search img{
     width: 30px;
     height: 40px;
-    margin: 5px 10px;
 }
 .search img:hover{
     transform: scale(1.1);
 
 }
+#menuicon {
+    font-size: 2rem;
+    color: var(--text-color);
+    display: none;
+}
+
 #home{
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -337,6 +343,7 @@ a.active {
     letter-spacing: 0.15em;
     font-style: italic;
     font-family: "Trade Winds", system-ui;
+    text-align: center;
 }
 #menu{
     background-color: var(--bg-color);
@@ -430,6 +437,7 @@ a.active {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-social a {
@@ -452,4 +460,197 @@ a.active {
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
+}
+@media screen and (max-width:1600px) {
+    .menu_cat_items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu_cat_title{
+        text-align: center;
+    }   
+}
+
+@media screen and (max-width:1300px) {
+    .main_content h1{
+        font-size: 3rem;
+    }
+    .main_content p{
+        font-size: 1rem;
+    }
+    .main_img img{
+        width:28rem;
+    height:22rem;
+    }
+    .menu_cat_title{
+        text-align: center;
+    }
+    .menu_cat_items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main_contact form{
+        padding: 1rem 13rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .main_about{
+        flex-direction: column;
+    }
+    .about_1,.about_2{
+        width: 80%;
+        text-align: center;
+    }
+    .title h1{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    .home_main{
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .main_content{
+        width: 100%;
+        text-align: center;
+    }
+    .main_content button{
+        align-self: center;
+    }
+    .main_content h1{
+        font-size: 2.5rem;
+    }
+    .main_content p{
+        font-size: 0.8rem;
+    }
+    .main_img img{
+        width:28rem;
+    height:20rem;
+    }
+    .top_prods{
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 12rem;
+        height: 8rem;
+    }
+    .main_contact form{
+        padding: 1rem 9rem;
+    }
+}
+@media screen and (max-width:950px) {
+    .navbar{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 1rem;
+    }
+    .navbar_ul{
+        height: min-content;
+        display: none;
+        position: absolute;
+        top: 4.4rem;
+        left: 9rem;
+        width: 100%;
+        padding: 1rem 5%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+    }
+    .navbar_ul li{
+        margin: 2rem 0;
+    }
+
+    #menuicon{
+        display: block;
+    }
+}
+@media screen and (max-width:750px) {
+    section{
+        padding: 7rem 1rem;
+    }
+    .main_img img{
+        width: 20rem;
+    height: 15rem;
+    }
+    .top_prod_title h2{
+        font-size:1.5rem ;
+    }
+    .main_contact form{
+        padding: 1rem 5rem;
+    }
+    .main_about{
+        padding: 0.5rem;
+    }
+    .about_1{
+        padding: 0.5rem;
+    }
+    .about_1 p{
+        font-size: 0.8rem;
+    }
+    .about_1,.about_2{
+        width: 100%;
+    }
+    .about_categories h5{
+        font-size: 1rem;
+    }
+    .about_categories img{
+        height: 7rem;
+    }
+    .card-body h5,.card-body h6{
+        font-size: 0.8rem;
+    }
+    .main_contact button{
+        width: 8rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .main_contact form{
+        padding: 1rem 1rem;
+        margin: 1rem;
+    }
+    .main_contact form input,textarea{
+        font-size: 1rem;
+    }
+    .main_content button{
+        width: 7rem;
+        height: 2rem;
+        font-size: 0.7rem;
+        padding: 0;
+    }
+    .about_1 button{
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer h3,.footer h4,.footer h5,.footer h6{
+        font-size: 0.8rem;
+    }
+    .about_categories{
+        flex-direction: column;
+    }
+    .category{
+        width: 70%;
+        height: 10rem;
+        margin: 1rem 0;
+    }
+    .about_2{
+        padding: 0;
+    }
+    .about_tagline h1{
+        font-size: 1rem;
+    }
+    .main_contact button{
+        width: 7rem;
+        font-size: 0.7rem;
+    }
+    .footer-social a{
+        font-size: 1rem;
+        margin: 1rem 1rem;
+    }
+    
 }

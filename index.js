@@ -85,3 +85,10 @@ function sendMail(){
           }).showToast();
     }
 }
+
+let menuicon=document.getElementById('menuicon')
+menuicon.onclick = () =>{
+    menuicon.classList.toggle('fa-x');
+    const navbar = document.querySelector('.navbar_ul');
+    navbar.style.display = navbar.style.display === 'block' ? 'none' : 'block';
+}
