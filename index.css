@@ -17,13 +17,14 @@ header{
     max-width: 100vw;
 }
 body {
-    width: 100%;
+    max-width: 100vw;
     height: 100%;
     background: var(--bg-color);
     color: var(--text-color);
 }
 section {
     min-height: 100vh;
+    max-width: 100vw;
     padding: 9rem 2rem;
     width: 100%;
 }
@@ -657,4 +658,14 @@ a.active {
         margin: 1rem 1rem;
     }
     
+}
+@media screen and (max-width:400px) {
+    .navbar_ul{
+        left: 8rem;
+        width: min-content;
+    }
+    .navbar_ul a{
+        font-size: 0.7rem;
+
+    }
 }

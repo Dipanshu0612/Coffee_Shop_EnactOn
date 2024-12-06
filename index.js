@@ -31,7 +31,7 @@ ScrollReveal({
 ScrollReveal().reveal('.main_menu h1,.main_contact h1', {origin: 'top',delay:300});
 ScrollReveal().reveal('.about_1 button,.about_tagline,.main_contact button', {origin: 'bottom',delay:300});
 ScrollReveal().reveal('.main_content h1, .main_content p,.main_content button,.about_1 h2, .about_1 p,.menu_cat_items', {origin: 'left',interval: 100});
-ScrollReveal().reveal('.main_img,.about_2,.inp2', {origin: 'right'});
+// ScrollReveal().reveal('.main_img,.about_2,.inp2', {origin: 'right'});
 ScrollReveal().reveal('.menu_cat_title,.inp1', {origin: 'left'});
 ScrollReveal().reveal('.card1, .card2, .card3, .card4', {origin: 'bottom',delay:500,interval: 150});
 ScrollReveal().reveal('.cat1, .cat2, .cat3', {origin: 'left',delay:500,interval: 250});
