@@ -607,6 +607,10 @@ a.active {
     }
 }
 @media screen and (max-width:600px) {
+    .navbar_ul{
+        top: 3.55rem;
+        left: 8rem;
+    }
     .main_contact form{
         padding: 1rem 1rem;
         margin: 1rem;
